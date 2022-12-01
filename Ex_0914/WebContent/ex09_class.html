@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			.text{color:red;} /* css selector : class -> . */
+			.text2{color:#0f0;}
+			
+			/* p태그와 text클래스는 동일선상에 있다 */
+			p.text{color:#00f;}
+			span{color:#00f;}
+			.box{color:gray;}
+			
+			/* 자식태그에 css를 적용하고 싶을 때는 띄어쓰기를 해줘야 한다 */
+			.box h1 span{color:green;}
+		</style>
+	</head>
+	<body>
+		<!-- 웹표준에서의 class는 구분을 하기 위한 속성 -->
+		<!-- class의 이름은 중복이 돼도 상관없다 -->
+		<h1 class="text"><span>스타일</span> 연습 중 1-1</h1>
+		<h1 class="text2">스타일 연습 중 1-2</h1>
+		<h2 class="text">스타일 연습 중 2</h1>
+		<h3>스타일 연습 중 3</h1>
+		<p class="text">스타일 연습 중 4</p>
+		
+		<div class="box">
+			<!-- span태그는 h1태그의 자식태그가 된다 -->
+			<h1><span class="span_green">클래스</span> 연습 중</h1>
+			<h2>클래스 연습 중2</h2>
+		</div>
+	</body>
+</html>

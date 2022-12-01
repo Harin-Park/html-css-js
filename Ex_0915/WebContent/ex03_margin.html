@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>margin(바깥쪽 여백)</title>
+		<style>
+			p{border : 2px solid red;
+			  background : grey;
+			  color: white;}
+			#box1{margin : 30px;} /* 상,하,좌,우 적용 */
+			#box2{margin : 20px 50px;} /* 상하, 좌우  */
+			#box3{margin: 30px 50px 30px;} /* 상,좌우,하 */
+			#box4{margin: 50px 30px 40px 70px;} /* 상,우,하,좌 */
+			
+			div{border : 2px solid red;
+				margin: 50px;}
+		</style>
+	</head>
+	<body>
+		<p id="box1">마진 적용 테스트중</p>
+		<p id="box2">마진 적용 테스트중</p>
+		<p id="box3">마진 적용 테스트중</p>
+		<p id="box4">마진 적용 테스트중</p>
+		
+		<div id="box5">div 마진</div>
+		<div id="box6">div 마진</div>
+	</body>
+</html>

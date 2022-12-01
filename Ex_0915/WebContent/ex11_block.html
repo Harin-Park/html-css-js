@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>인라인요소 -> 블록요소</title>
+		<style>
+			img{display : block;} /* display : block -> 인라인 요소를 블록요소로 바꿈
+									 display : inline -> 블록요소를 인라인 요소로 바꿈 */
+			p{display : inline;
+			  border : 2px solid red;}	
+			span{display : block;
+				 border : 1px solid red;}
+		</style>
+	</head>
+	<body>
+		<p>저는 블록요소입니다.</p>
+		<div>
+			<img src="image/acid2Test.jpg" alt="스마일">
+			<span>이미지1</span>
+			<a href="#">링크</a>
+		</div>
+	</body>
+</html>
